@@ -1,6 +1,9 @@
 package SolidPrinciples;
 
-// In my design, the high-level module RecommendationAlgorithm does not depend on concrete recommendation implementations like TrendingRecommendation. Instead, it depends on the abstraction RecommendationStrategy. The concrete implementations implement this interface. Dependency is injected via constructor, ensuring loose coupling and making the system extensible and testable.
+// In my design, the high-level module RecommendationAlgorithm does not depend on concrete recommendation
+// implementations like TrendingRecommendation. Instead, it depends on the abstraction RecommendationStrategy. 
+// The concrete implementations implement this interface. Dependency is injected via constructor, ensuring loose 
+// coupling and making the system extensible and testable.
 
 // abstraction layer
 interface RecommendationStrategy{
